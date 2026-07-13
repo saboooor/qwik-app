@@ -1,14 +1,21 @@
-import type { DocumentHead } from "@qwik.dev/router";
+import { Link, type DocumentHead } from "@qwik.dev/router";
 import { component$ } from "@qwik.dev/core";
 
 import Counter from "../components/starter/counter/counter";
 import Hero from "../components/starter/hero/hero";
 import Infobox from "../components/starter/infobox/infobox";
 import Starter from "../components/starter/next-steps/next-steps";
+import Background from '../media/thunder.png?jsx';
 
 export default component$(() => {
   return (
     <>
+      <Background id="bg" alt="Background" class={{
+        'fixed scale-105 bottom-0 brightness-85 saturate-85 sepia-15 dark:opacity-50 blur-none overflow-hidden -z-10 w-lvw h-lvh object-cover': true,
+      }}/>
+      <div class="container container-center container-spacing-xl">
+        <Link href="/demo/flower" class="bg-red-500">Flower App click here :3</Link>
+      </div>
       <Hero />
       <Starter />
 

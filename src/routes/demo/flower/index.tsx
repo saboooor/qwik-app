@@ -6,6 +6,7 @@ import {
   useVisibleTask$,
 } from "@qwik.dev/core";
 import styles from "./flower.css?inline";
+import Background from '../media/thunder.png?jsx';
 
 export default component$(() => {
   useStylesScoped$(styles);
@@ -26,6 +27,9 @@ export default component$(() => {
 
   return (
     <div class="container container-center">
+      <Background id="bg" alt="Background" class={{
+        'fixed scale-105 bottom-0 brightness-85 saturate-85 sepia-15 dark:opacity-50 blur-none overflow-hidden -z-10 w-lvw h-lvh object-cover': true,
+      }}/>
       <div role="presentation" class="ellipsis"></div>
       <h1>
         <span class="highlight">Generate</span> Flowers
