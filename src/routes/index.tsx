@@ -13,9 +13,7 @@ export default component$(() => {
       <Background id="bg" alt="Background" class={{
         'fixed scale-105 bottom-0 brightness-85 saturate-85 sepia-15 dark:opacity-50 blur-none overflow-hidden -z-10 w-lvw h-lvh object-cover': true,
       }}/>
-      <div class="container container-center container-spacing-xl">
-        <Link href="/demo/flower" class="bg-red-500">Flower App click here :3</Link>
-      </div>
+      <Link href="/demo/flower" style="background-color: #ff0000; color: white; padding: 10px 20px; text-decoration: none;">Flower App SPA link</Link>
       <Hero />
       <Starter />
 
