@@ -6,7 +6,7 @@ import {
   useVisibleTask$,
 } from "@qwik.dev/core";
 import styles from "./flower.css?inline";
-import Background from '../media/thunder.png?jsx';
+import Background from '../../../media/thunder.png?jsx';
 
 export default component$(() => {
   useStylesScoped$(styles);
